@@ -7,6 +7,17 @@ function escreve_arg_grava_repositorio(ident){
   $("#bt_grava_repositorio").attr("onclick","grava_repositorio("+ ident +")");
 }
 
+//altera argumento da função "detalhe_repositorio()", setando qual repositorio deve ser visualizado
 function escreve_arg_grava_repositorio(ident){
-  $("#bt_grava_repositorio").attr("onclick","detalhe_repositorio("+ ident +")");
+  $("#bt_detalhe_repositorio").attr("onclick","detalhe_repositorio("+ ident +")");
+}
+
+//altera argumento da função "apaga_repositorio_armazenado()", setando qual repositorio deve ser apagado
+function escreve_arg_grava_repositorio(ident){
+  $("#bt_apaga_repositorio_armazenado").attr("onclick","apaga_repositorio_armazenado("+ ident +")");
+}
+
+//altera argumento da função "detalhe_repositorio()", setando qual repositorio deve ser visualizado
+function escreve_arg_grava_repositorio(ident){
+  $("#bt_detalhe_repositorio_armazenado").attr("onclick","detalhe_repositorio_armazenado("+ ident +")");
 }
