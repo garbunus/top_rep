@@ -4,7 +4,7 @@
 function busca_repositorios(){
   var dados = { 'linguagem' : $('#select_linguagem option:selected').val()};
   $.ajax({
-        url: "https://api.github.com/users/google/repos",
+        url: "https://api.github.com/search/repositories?q=language:"+ linguagem +"&sort=star",
         type: 'GET',
         dataType: 'json',
         //async: 'false',
