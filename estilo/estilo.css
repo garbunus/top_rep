@@ -1,0 +1,111 @@
+body{
+  background-color: #DDD;
+  width: 100%;
+  height: 700px;
+}
+
+/* ################  estilos gerais  #######################*/
+.bt_geral{
+ margin: 10px;
+}
+.bt_geral:hover{ color: #FFDD09; transition: 0.2s; }
+
+.bloco_interno{
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+select{
+  width: 300px;
+}
+
+
+/* ################  estilo div principal  ##################### */
+#tela_app{
+  margin-top: 3%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #EEE;
+  width: 80%;
+  height: 80%;
+}
+
+#barra_sup{
+  background-color: #777;
+  color: #AAA;
+  height: 30px;
+  width: 100%;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+
+.bt_telas{
+      display: block;
+      color: #DDD;
+      text-align: center;
+      margin-right: 5px;
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      height: 20px;
+      text-decoration: none;
+      float: left;
+      font-family: 'Raleway', sans-serif;
+      font-stretch: expanded;
+      font-size: 16px;
+      transition: 0.7s;
+      cursor: pointer;
+
+}
+.bt_telas:hover{ color: #FFDD09; transition: 0.2s; }
+.bt_telas:active{ color: #AAA; }
+
+/* ################  estilos tela busca  ##################### */
+#repositorios_git{
+  width: 80%;
+  height: 400px;
+  overflow-y: scroll;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: #DDD;
+}
+
+#barra_inferior_botoes_git{
+  height: 100%;
+  width: 80%;
+  text-align: right;
+}
+
+#barra_superior_botoes_git{
+  height: 100%;
+  width: 80%;
+  text-align: right;
+}
+
+/* ################  estilos tela dados armazenados  ##################### */
+#repositorios_armazenados{
+  width: 80%;
+  height: 400px;
+  overflow-y: scroll;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: #DDD;
+}
+
+#barra_botoes_armazenados{
+  height: 100%;
+  width: 80%;
+  text-align: right;
+}
