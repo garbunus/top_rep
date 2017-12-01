@@ -10,8 +10,8 @@ header('Content-Type: text/html; charset=utf-8');
 class db_acess{
 
     private $DSN = "mysql:host=localhost; dbname=top_repo; charset=utf8"; // charset=utf8
-    private $usuario = "root";
-    private $senhaMagica = "senhamagica";
+    private $usuario = "*******";
+    private $senhaMagica = "*********";
 
 
     //método "mágico" de configuração das variáveis da classe
