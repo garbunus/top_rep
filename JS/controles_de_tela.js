@@ -5,7 +5,7 @@
 
 function mostra_tela_busca(){
    $('.telas').css('display', 'none');
-   $('#tela_busca').css('display','block');
+   $('#tela_buscas').css('display','block');
 }
 
 function mostra_tela_armazenados(){
