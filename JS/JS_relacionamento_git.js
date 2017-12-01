@@ -1,8 +1,8 @@
 /*###################################################################################
    Busca dados de repositórios para linguagem selecionada
 ###################################################################################*/
-function busca_repositorios(){
-  var dados = { 'linguagem' : $('#select_linguagem option:selected').val()};
+function buscar_repositorios(){
+  var linguagem = $('#select_linguagem option:selected').val();
   $.ajax({
         url: "https://api.github.com/search/repositories?q=language:"+ linguagem +"&sort=star",
         type: 'GET',
@@ -14,13 +14,15 @@ function busca_repositorios(){
         },
         success: function(data){
             console.log(data);
-            $('#loading').css('display', 'none');
+            var itens = data['items'];
             var html_party = '<table class="tab_lista">';
-            for(var i = 0; i < data.length; i++){
-              html_party += '<tr class="linha_lista" onclick="destacar(this), escreve_arg_detalhe_repositorio(' + data[i].xxxxx + '), escreve_arg_grava_repositorio(' + data[i].xxxxx + ')"><td style="width:100px;">' + data[i].repo + '</td><td style="width:250px;">' + data[i].carac1 + '</td><td style="width:250px;">' + data[i].carac2 + '</td></tr>';
+            for(var i = 0; i < itens.length; i++){
+              html_party += '<tr class="linha_lista" onclick="destacar(this), escreve_arg_detalhe_repositorio(' + itens[i].id + ', \'' + itens[i].language + '\', \'' + itens[i].description + '\', \'' + itens[i].url + '\', \'' + itens[i].created_at + '\', ' + itens[i].forks + '), escreve_arg_grava_repositorio(' + data[i].xxxxx + ')"><td style="width:250px;">' + data[i].repo + '</td><td style="width:250px;">' + data[i].carac1 + '</td><td style="width:100px;">' + data[i].carac2 + '</td></tr>';
             };
             html_party += '</table>';
             $('#repositorios_git').html(html_party);
+
+            $('#loading').css('display', 'none');
         },
         error: function (data, string, string2) {
             console.log (data);
