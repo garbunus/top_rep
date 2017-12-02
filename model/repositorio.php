@@ -1,13 +1,13 @@
 <?php
 
-requeri_once("/DAO/DAO_repositorio.php");
+require_once("/DAO/DAO_repositorio.php");
 
 class repositorios{
 
   //########################### Grava dados no banco ###########################
-    public function grava_repositorios($nome, $descricao, $forks, $id, $linguagem, $url, $criado_em){
+    public function grava_repositorios($id, $nome, $linguagem, $descricao, $html_url, $url, $criado_em, $forks){
       $dao = new DAO_repositorios;
-      $dao->DAO_grava_repositorios($nome, $descricao, $forks, $id, $linguagem, $url, $criado_em);
+      $dao->DAO_grava_repositorios($id, $nome, $linguagem, $descricao, $html_url, $url, $criado_em, $forks);
     }
 
   //########################### Busca dados no banco ###########################
