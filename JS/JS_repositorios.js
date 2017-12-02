@@ -21,6 +21,7 @@ function grava_repositorio(id, nome, linguagem, descricao, html_url, url, criado
             console.log (data);
             console.log (string);
             console.log (string2);
+            $('#feedback_text_erro').html(data);
             $('#loading').css('display', 'none');
             $('#check_erro').css('display', 'block');
             $("#check_erro").delay(1500).fadeOut(300);

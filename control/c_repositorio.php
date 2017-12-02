@@ -10,7 +10,8 @@ switch ($opt) {
     $repo = new repositorio;
     $resultado = $repo->gravar_repositorio($_POST['id'], $_POST['nome'], $_POST['linguagem'], $_POST['descricao'], $_POST['html_url'], $_POST['url'], $_POST['criado_em'], $_POST['forks']);
     echo json_encode($resultado);
-
+    break;
+    
   case '2':
       $repo = new repositorio;
       $resultado = $repo->buscar_repositorios();
