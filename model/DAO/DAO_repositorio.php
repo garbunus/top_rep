@@ -12,9 +12,9 @@ class DAO_repositorio{
     $conexao = $banco->conectar();
 
     //SQL para gravar dados no banco
-    $sql_1 = $conexao->prepare('INSERT INTO repositorios (id, nome, descricao, forks, linguagem, html_url, url, criado_em) VALUES (:id, :nome, :descricao, :forks, :linguagem, :html, :url, :criado_em),');
+    $sql_1 = $conexao->prepare('INSERT INTO repositorios (id, nome, descricao, forks, linguagem, html_url, url, criado_em) VALUES (:id, :nome, :descricao, :forks, :linguagem, :html, :url, :criado_em);');
     $sql_1->bindParam(':nome', $nome);
-    $sql_1->bindParam(':descricao', $desricao);
+    $sql_1->bindParam(':descricao', $descricao);
     $sql_1->bindParam(':forks', $forks);
     $sql_1->bindParam(':id', $id);
     $sql_1->bindParam(':linguagem', $linguagem);
