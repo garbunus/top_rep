@@ -27,6 +27,7 @@ class DAO_repositorio{
         $conexao->beginTransaction();
         $sql_1->execute();
         $conexao->commit();
+        return "Repositório gravado com sucesso.";
 
     }catch(PDOexception $err){
         $conexao->rollBack();
