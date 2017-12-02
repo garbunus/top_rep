@@ -35,8 +35,9 @@
       <?php
           include "tela_busca/tela_busca.php";
           include "tela_armazenados/tela_armazenados.php";
-          include "feedback.php";
           include "detalhes.php";
+          include "feedback.php";
+
       ?>
     </div>
   </BODY>
