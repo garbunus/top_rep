@@ -41,6 +41,8 @@ class DAO_repositorio{
     $banco = new db_acess();
     //abre conexao com o banco
     $conexao = $banco->conectar();
+    //variável para armazenar os resultados
+    $retorno = array();
 
     //SQL para gravar dados no banco
     $sql_1 = $conexao->prepare('SELECT id, nome, descricao, linguagem FROM repositorios ORDER BY linguagem;');
@@ -71,7 +73,7 @@ class DAO_repositorio{
       $conexao = $banco->conectar();
 
       //variável para armazenar os resultados
-      $retorno;
+      $retorno = array();
 
       //SQL para gravar dados no banco
       $sql_1 = $conexao->prepare('SELECT * FROM repositorios WHERE id = :id;');
