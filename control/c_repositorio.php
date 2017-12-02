@@ -8,7 +8,7 @@ $opt = $_POST['opcao'];
 switch ($opt) {
   case '1':
     $repo = new repositorio;
-    $resultado = $repo->grava_repositorio($_POST['id'], $_POST['nome'], $_POST['linguagem'], $_POST['descricao'], $_POST['html_url'], $_POST['url'], $_POST['criado_em'], $_POST['forks']);
+    $resultado = $repo->gravar_repositorio($_POST['id'], $_POST['nome'], $_POST['linguagem'], $_POST['descricao'], $_POST['html_url'], $_POST['url'], $_POST['criado_em'], $_POST['forks']);
     echo json_encode($resultado);
 
   case '2':
@@ -19,13 +19,13 @@ switch ($opt) {
 
   case '3':
       $repo = new repositorio;
-      $resultado = $repo->busca_detalhes_repositorio($_POST['id']);
+      $resultado = $repo->buscar_detalhes_repositorio($_POST['id']);
       echo json_encode($resultado);
       break;
 
   case '4':
       $repo = new repositorio;
-      $resultado = $repo->apaga_repositorio($_POST['id']);
+      $resultado = $repo->apagar_repositorio($_POST['id']);
       echo json_encode($resultado);
       break;
 
