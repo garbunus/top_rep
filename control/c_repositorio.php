@@ -8,7 +8,7 @@ $opt = $_POST['opcao'];
 switch ($opt) {
   case '1':
     $repo = new repositorios;
-    $resultado = $repo->grava_repositorio($_POST['nome'], $_POST['descricao'], $_POST['forks'], $_POST['id'], $_POST['linguagem'], $_POST['url'], $_POST['criado_em']);
+    $resultado = $repo->grava_repositorio($_POST['id'], $_POST['nome'], $_POST['linguagem'], $_POST['descricao'], $_POST['html_url'], $_POST['url'], $_POST['criado_em'], $_POST['forks']);
     echo json_encode($resultado);
 
   case '2':
