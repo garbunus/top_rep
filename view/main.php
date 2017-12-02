@@ -19,7 +19,7 @@
     <script src="../JS/controles_de_tela.js" type="text/javascript"></script>
 
     <!-- ADD STYLE-->
-    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans|Open+Sans|Raleway:300,400" rel="stylesheet">
     <link href="../estilo/estilo.css" rel="stylesheet" type="text/css"/>
     <link rel="shortcut icon" href="/img/logo.png" type="image/x-icon" />
 
