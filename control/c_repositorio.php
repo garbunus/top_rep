@@ -1,6 +1,6 @@
 <?php
 
-require_once('../model/repositorios.php');
+require_once('../model/repositorio.php');
 //recebe opção e argumentos via POST
 $opt = $_POST['opcao'];
 
