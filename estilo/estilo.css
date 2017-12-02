@@ -3,6 +3,8 @@ body{
   width: 100%;
   height: 700px;
   font-family: 'Noto Sans', sans-serif;
+  font-weight: 100;
+  font-stretch: expanded;
 }
 
 /* ################  estilos gerais  #######################*/
@@ -21,15 +23,16 @@ select{
   width: 300px;
 }
 
-td{
+.tab_lista{
   border-collapse: collapse;
 }
 
 .linha_lista{
   cursor: pointer;
+  border-collapse: collapse;
   border-bottom: 1px;
   border-bottom-style: solid;
-  border-bottom-color: #DDD;
+  border-bottom-color: #FFF;
 }
 .linha_lista:hover{ background-color: rgba(0,0,0,0.1)}
 .linha_lista:active{ background-color: rgba(0,0,0,0.2)}
@@ -73,6 +76,7 @@ ul{
       text-decoration: none;
       float: left;
       font-family: 'Raleway', sans-serif;
+      font-weight: 400;
       font-stretch: expanded;
       font-size: 16px;
       transition: 0.7s;
@@ -89,9 +93,20 @@ ul{
   overflow-y: scroll;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 10px;
   margin-bottom: 10px;
   background-color: #DDD;
+}
+
+#cabecalho_repositorios_git{
+  width: 80%;
+  height: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  background-color: #888;
+  color: #FFF;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400
 }
 
 #barra_inferior_botoes_git{

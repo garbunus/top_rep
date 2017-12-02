@@ -11,6 +11,13 @@
     </select>
     <input id="bt_buscar_repositorios" type="button" class="bt_geral" value="Buscar" onclick="buscar_repositorios()">
   </div>
+  <div id="cabecalho_repositorios_git">
+    <table>
+      <tr>
+        <td style="width:240px;">Nome:</td><td style="width:340px;">Descrição:</td><td style="width:180px;">Criado em:</td><td style="width:80px;"></td>
+      </tr>
+    </table>
+  </div>
   <div id="repositorios_git"></div>
   <div id="barra_inferior_botoes_git" class="bloco_interno">
     <input id="bt_grava_repositorio" type="button" class="bt_geral" value="Gravar" onclick="grava_repositorio()">
