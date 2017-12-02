@@ -17,3 +17,12 @@ function se_nulo(valor){
     return valor;
   }
 }
+
+//######################  conversão de formatos de datas ############################
+
+//************       converter formato de data yyyy-mm-dd para formato do usuário      *******************
+function dataUStoPTBR(umaData){
+    var data = new Date(umaData);
+    var novaData = data.toLocaleString();
+    return novaData;
+}

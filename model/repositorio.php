@@ -1,13 +1,15 @@
 <?php
 
 require_once("DAO/DAO_repositorio.php");
+require("acessorios/tratamento_datas.php");
 
 class repositorio{
 
   //########################### Grava dados no banco ###########################
     public function gravar_repositorio($id, $nome, $linguagem, $descricao, $html_url, $url, $criado_em, $forks){
+      $data = date_to_datetime_mysql($criado_em);
       $dao = new DAO_repositorio;
-      $retorno = $dao->DAO_gravar_repositorio($id, $nome, $linguagem, $descricao, $html_url, $url, $criado_em, $forks);
+      $retorno = $dao->DAO_gravar_repositorio($id, $nome, $linguagem, $descricao, $html_url, $url, $data, $forks);
       return $retorno;
     }
 
@@ -31,6 +33,10 @@ class repositorio{
       $retorno = $dao->DAO_apagar_repositorio($id);
       return $retorno;
     }
+
+
+  //]
+
 
 
 }
