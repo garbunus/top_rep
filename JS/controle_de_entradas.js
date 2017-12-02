@@ -11,7 +11,9 @@ function destacar(item){
 
 //verifica se valor é nulo
 function se_nulo(valor){
-  if valor == null{
-    return "Não há informação disponível."
+  if (valor == null){
+    return "Não há informação disponível na fonte.";
+  }else{
+    return valor;
   }
 }
