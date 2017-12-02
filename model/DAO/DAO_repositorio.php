@@ -2,7 +2,7 @@
 
 require_once("db_acess/db_acess.php");
 
-class DAO_repositorios{
+class DAO_repositorio{
 
 //########################### Grava dados no banco ###########################
   public function DAO_grava_repositorio($id, $nome, $linguagem, $descricao, $html_url, $url, $criado_em, $forks){

@@ -2,7 +2,7 @@
 
 require_once("DAO/DAO_repositorio.php");
 
-class repositorios{
+class repositorio{
 
   //########################### Grava dados no banco ###########################
     public function grava_repositorio($id, $nome, $linguagem, $descricao, $html_url, $url, $criado_em, $forks){
