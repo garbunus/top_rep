@@ -19,13 +19,13 @@ switch ($opt) {
 
   case '3':
       $repo = new repositorios;
-      $resultado = $repo->busca_detalhes_repositorios($_POST['id']);
+      $resultado = $repo->busca_detalhes_repositorio($_POST['id']);
       echo json_encode($resultado);
       break;
 
   case '4':
       $repo = new repositorios;
-      $resultado = $repo->apaga_repositorios($_POST['id']);
+      $resultado = $repo->apaga_repositorio($_POST['id']);
       echo json_encode($resultado);
       break;
 

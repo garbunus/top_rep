@@ -1,11 +1,11 @@
 <?php
 
-require_once("../db_acess/db_acess.php");
+require_once("db_acess/db_acess.php");
 
 class DAO_repositorios{
 
 //########################### Grava dados no banco ###########################
-  public function DAO_grava_repositorios($id, $nome, $linguagem, $descricao, $html_url, $url, $criado_em, $forks){
+  public function DAO_grava_repositorio($id, $nome, $linguagem, $descricao, $html_url, $url, $criado_em, $forks){
     //instancia da classe db_acess
     $banco = new db_acess();
     //abre conexao com o banco
@@ -64,7 +64,7 @@ class DAO_repositorios{
   }
 
 //########################### Busca dados no banco ###########################
-  public function DAO_busca_detalhes_repositorios($id){
+  public function DAO_busca_detalhes_repositorio($id){
       //instancia da classe db_acess
       $banco = new db_acess();
       //abre conexao com o banco
@@ -95,7 +95,7 @@ class DAO_repositorios{
 
 
 //########################### Apaga dados no banco ###########################
-  public function DAO_apaga_repositorios(){
+  public function DAO_apaga_repositorio(){
       //instancia da classe db_acess
       $banco = new db_acess();
       //abre conexao com o banco
