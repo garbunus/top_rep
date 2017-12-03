@@ -23,8 +23,27 @@ select{
   width: 300px;
 }
 
+td{
+  padding: 3px;
+}
+
+.td_link{
+  text-align: center;
+  font-weight: 400;
+  background-color: orange;
+  color: #EEE;
+}
+
+.legenda{
+  color: orange;
+  font-weight: 300;
+}
+
 .tab_lista{
   border-collapse: collapse;
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 100;
+  font-size: 10px;
 }
 
 .linha_lista{
@@ -38,15 +57,44 @@ select{
 .linha_lista:active{ background-color: rgba(0,0,0,0.2)}
 .linha_lista_checked{ background-color: rgba(0,0,0,0.2)}
 
+h3{
+  color: #999;
+  font-family: 'Noto Sans', sans-serif;
+}
+
+.fundo_feedback{
+  text-align: center;
+  display: none;
+  position: absolute;
+  z-index: 1000;
+  padding-top: 10%;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+  /*background-color: rgb(255,255,255);*/
+  background-color: rgba(255,255,255,0.75);
+  transition: 0,5s;
+}
+
+.img_feedback{
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10%;
+}
 
 /* ################  estilo div principal  ##################### */
 #tela_app{
-  margin-top: 3%;
+  margin-top: 10px;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 10px;
   background-color: #EEE;
-  width: 80%;
-  height: 80%;
+  width: 1000px;
+  height: 600px;
 }
 
 #barra_sup{
@@ -106,7 +154,7 @@ ul{
   background-color: #888;
   color: #FFF;
   font-family: 'Raleway', sans-serif;
-  font-weight: 400
+  font-weight: 400;
 }
 
 #barra_inferior_botoes_git{
