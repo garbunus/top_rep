@@ -17,6 +17,7 @@
     <script src="../JS/controle_de_funcoes.js" type="text/javascript"></script>
     <script src="../JS/controle_de_entradas.js" type="text/javascript"></script>
     <script src="../JS/controles_de_tela.js" type="text/javascript"></script>
+    <script src="../JS/widget_modal.js" type="text/javascript"></script>
 
     <!-- ADD STYLE-->
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans|Open+Sans|Raleway:100,200,300,400" rel="stylesheet">
