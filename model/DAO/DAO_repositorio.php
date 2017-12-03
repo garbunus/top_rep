@@ -98,7 +98,7 @@ class DAO_repositorio{
 
 
 //########################### Apaga dados no banco ###########################
-  public function DAO_apagar_repositorio(){
+  public function DAO_apagar_repositorio($id){
       //instancia da classe db_acess
       $banco = new db_acess();
       //abre conexao com o banco
@@ -113,6 +113,7 @@ class DAO_repositorio{
           $conexao->beginTransaction();
           $sql_1->execute();
           $conexao->commit();
+          return "Repositório apagado com sucesso.";
 
       }catch(PDOexception $err){
           $conexao->rollBack();
