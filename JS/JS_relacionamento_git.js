@@ -17,7 +17,7 @@ function buscar_repositorios(){
             var itens = data['items'];
             var html_party = '<table class="tab_lista">';
             for(var i = 0; i < itens.length; i++){
-              html_party += '<tr class="linha_lista" onclick="destacar(this), escreve_arg_detalhe_repositorio(' + itens[i].id + ', \'' + itens[i].name + '\', \'' + itens[i].language + '\', \'' + itens[i].description + '\', \'' + itens[i].url + '\', \'' + itens[i].created_at + '\', ' + itens[i].forks + '), escreve_arg_grava_repositorio('  + itens[i].id + ',  \'' + itens[i].name + '\', \'' + itens[i].language + '\', \'' + itens[i].description + '\', \'' + itens[i].html_url + '\', \'' + itens[i].url + '\', \'' + itens[i].created_at + '\', ' + itens[i].forks + ')"><td style="width:250px;">' + itens[i].name + '</td><td style="width:350px;">' + se_nulo(itens[i].description) + '</td><td style="width:180px;">' + dataUStoPTBR(itens[i].created_at) + '</td><td style="width:80px;"><a href=\"' + itens[i].html_url + '\" target="_blank">Acessar</a></td></tr>';
+              html_party += '<tr class="linha_lista" onclick="destacar(this), escreve_arg_detalhe_git(' + itens[i].id + ', \'' + itens[i].name + '\', \'' + itens[i].language + '\', \'' + itens[i].description + '\', \'' + itens[i].url + '\', \'' + itens[i].created_at + '\', ' + itens[i].forks + '), escreve_arg_grava_repositorio('  + itens[i].id + ',  \'' + itens[i].name + '\', \'' + itens[i].language + '\', \'' + itens[i].description + '\', \'' + itens[i].html_url + '\', \'' + itens[i].url + '\', \'' + itens[i].created_at + '\', ' + itens[i].forks + ')"><td style="width:250px;">' + itens[i].name + '</td><td style="width:350px;">' + se_nulo(itens[i].description) + '</td><td style="width:180px;">' + dataUStoPTBR(itens[i].created_at) + '</td><td style="width:80px;"><a href=\"' + itens[i].html_url + '\" target="_blank">Acessar</a></td></tr>';
             };
             html_party += '</table>';
             $('#repositorios_git').html(html_party);
@@ -44,6 +44,18 @@ function preenche_resultados_busca(){
 
 }
 
-function mostra_detalhes(){
+function detalhe_repositorio_git(id, name, language, description, url, created_at, forks){
+  var html_party = '<table>';
+  html_party += '<tr><td colspan="2"><h3>Detalhes do repositório</h3></td></tr>';
+  html_party += '<tr><td>ID:</td><td>'+ id +'</td></tr>';
+  html_party += '<tr><td>Nome:</td><td>'+ name +'</td></tr>';
+  html_party += '<tr><td>Linguagem:</td><td>'+ language +'</td></tr>';
+  html_party += '<tr><td>Descrição:</td><td>'+ description +'</td></tr>';
+  html_party += '<tr><td>Criado em:</td><td>'+ dataUStoPTBR(created_at) +'</td></tr>';
+  html_party += '<tr><td>Forks:</td><td>'+ forks +'</td></tr>';
+  html_party += '<tr><tdcolspan="2"><a href=\"'+ url +'\" target="_blank">Quero mais detalhes<a></td></tr>';
+  html_party += '</table>';
+
+  $('#detalhes_git').html(html_party);
   $('#detalhes_git').dialog('open');
 }
