@@ -8,8 +8,8 @@ function escreve_arg_grava_repositorio(id, name, language, description, html_url
 }
 
 //altera argumento da função "detalhe_repositorio()", setando qual repositorio deve ser visualizado
-function escreve_arg_detalhe_repositorio(id, name, language, description, html_url, url, created_at, forks){
-  $('#bt_detalhe_repositorio').attr('onclick','detalhe_repositorio(' + id + ', \'' + name + '\', \'' + language + '\', \'' + description + '\', \'' + url + '\', \'' + created_at + '\', ' + forks + ')');
+function escreve_arg_detalhe_git(id, name, language, description, html_url, url, created_at, forks){
+  $('#bt_detalhe_repositorio').attr('onclick','detalhe_repositorio_git(' + id + ', \'' + name + '\', \'' + language + '\', \'' + description + '\', \'' + url + '\', \'' + created_at + '\', ' + forks + ')');
 }
 
 //altera argumento da função "apaga_repositorio_armazenado()", setando qual repositorio deve ser apagado
