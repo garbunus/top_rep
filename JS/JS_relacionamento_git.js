@@ -45,17 +45,17 @@ function preenche_resultados_busca(){
 }
 
 function detalhe_repositorio_git(id, name, language, description, url, created_at, forks){
-  var html_party = '<table>';
-  html_party += '<tr><td colspan="2"><h3>Detalhes do repositório</h3></td></tr>';
-  html_party += '<tr><td>ID:</td><td>'+ id +'</td></tr>';
-  html_party += '<tr><td>Nome:</td><td>'+ name +'</td></tr>';
-  html_party += '<tr><td>Linguagem:</td><td>'+ language +'</td></tr>';
-  html_party += '<tr><td>Descrição:</td><td>'+ description +'</td></tr>';
-  html_party += '<tr><td>Criado em:</td><td>'+ dataUStoPTBR(created_at) +'</td></tr>';
-  html_party += '<tr><td>Forks:</td><td>'+ forks +'</td></tr>';
-  html_party += '<tr><tdcolspan="2"><a href=\"'+ url +'\" target="_blank">Quero mais detalhes<a></td></tr>';
+  var html_party = '<table class="tab_lista">';
+  html_party += '<tr class="linha_lista"><td class="legenda">ID:</td><td>'+ id +'</td></tr>';
+  html_party += '<tr class="linha_lista"><td class="legenda">Nome:</td><td>'+ name +'</td></tr>';
+  html_party += '<tr class="linha_lista"><td class="legenda">Linguagem:</td><td>'+ language +'</td></tr>';
+  html_party += '<tr class="linha_lista"><td class="legenda">Descrição:</td><td style="width:400px;">'+ description +'</td></tr>';
+  html_party += '<tr class="linha_lista"><td class="legenda">Criado em:</td><td>'+ dataUStoPTBR(created_at) +'</td></tr>';
+  html_party += '<tr class="linha_lista"><td class="legenda">Forks:</td><td>'+ forks +'</td></tr>';
+  html_party += '<tr class="linha_lista"><td class="td_link" colspan="2"><a href=\"'+ url +'\" target="_blank">Quero mais detalhes<a></td></tr>';
   html_party += '</table>';
 
   $('#detalhes_git').html(html_party);
+  $('#detalhes_git').dialog({ title: "Detalhes do Repositório" });
   $('#detalhes_git').dialog('open');
 }

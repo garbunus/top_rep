@@ -15,7 +15,6 @@ body{
 .bloco_interno{
   margin-left: auto;
   margin-right: auto;
-  margin-top: 10px;
   margin-bottom: 10px;
 }
 
@@ -24,7 +23,7 @@ select{
 }
 
 td{
-  padding: 3px;
+  padding: 5px;
 }
 
 .td_link{
@@ -36,7 +35,8 @@ td{
 
 .legenda{
   color: orange;
-  font-weight: 300;
+  font-weight: 800;
+
 }
 
 .tab_lista{
@@ -176,9 +176,20 @@ ul{
   overflow-y: scroll;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 10px;
   margin-bottom: 10px;
   background-color: #DDD;
+}
+
+#cabecalho_repositorios_armazenados{
+  width: 80%;
+  height: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 60px;
+  background-color: #888;
+  color: #FFF;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
 }
 
 #barra_botoes_armazenados{
