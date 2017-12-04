@@ -1,5 +1,6 @@
 
 <div id="tela_armazenados" class="telas">
+  <div class="titulo">Repositórios Armazenados</div>
   <div id="cabecalho_repositorios_armazenados">
     <table>
       <tr>

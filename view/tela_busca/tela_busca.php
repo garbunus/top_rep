@@ -1,6 +1,8 @@
 
 <div id="tela_buscas" class="telas">
   <div id="barra_superior_botoes_git" class="bloco_interno">
+    <div class="titulo">Busca de repositórios</div>
+    <div class="legenda_input">Escolha uma linguagem para fazer a busca:</div>
     <select id="select_linguagem">
       <option value="" selected="selectd">Escolha</option>
       <option value="php" selected="selectd">PHP</option>
