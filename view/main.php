@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <HTML>
   <HEAD>
-    <meta charset="UTF-8">
+    <meta charset="utf8">
     <title>top_repo</title>
 
     <!-- ADD JQUERY -->
