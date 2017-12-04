@@ -14,11 +14,23 @@ function grava_repositorio(id, nome, linguagem, descricao, html_url, url, criado
             },
             success: function(data){
                 console.log(data);
-                $('#feedback_text_ok').html(data);
-                $('#loading').css('display', 'none');
-                $('#check_ok').css('display', 'block');
-                $("#check_ok").delay(1500).fadeOut(300);
-                busca_repositorios_armazenados();
+                //converte conteudo para string
+                var str = data.toString();
+                //testa se foi enviada mensagem de erro da transação no banco de dados
+                if(str.indexOf('SQLSTATE') > -1){
+                  //se sim exibe mensagem de erro adequada
+                  $('#feedback_text_erro').html(data);
+                  $('#loading').css('display', 'none');
+                  $('#check_erro').css('display', 'block');
+                  $("#check_erro").delay(1500).fadeOut(300);
+                }else{
+                  $('#feedback_text_ok').html(data);
+                  $('#loading').css('display', 'none');
+                  $('#check_ok').css('display', 'block');
+                  $("#check_ok").delay(1500).fadeOut(300);
+                  //atualiza lista de repositórios para o usuário
+                  busca_repositorios_armazenados();
+                }
             },
             error: function (data, string, string2) {
                 console.log (data);
@@ -130,12 +142,25 @@ function apaga_repositorio_armazenado(id){
               },
               success: function(data){
                   console.log(data);
-                  $('#feedback_text_ok').html(data);
-                  $('#loading').css('display', 'none');
-                  $('#check_ok').css('display', 'block');
-                  $("#check_ok").delay(1500).fadeOut(300);
-                  busca_repositorios_armazenados();
-                  escreve_arg_apaga_repositorio_armazenado(null);
+                  //converte conteudo para string
+                  var str = data.toString();
+                  //testa se foi enviada mensagem de erro da transação no banco de dados
+                  if(str.indexOf('SQLSTATE') > -1){
+                    //se sim exibe mensagem de erro adequada
+                    $('#feedback_text_erro').html(data);
+                    $('#loading').css('display', 'none');
+                    $('#check_erro').css('display', 'block');
+                    $("#check_erro").delay(1500).fadeOut(300);
+                  }else{
+                    $('#feedback_text_ok').html(data);
+                    $('#loading').css('display', 'none');
+                    $('#check_ok').css('display', 'block');
+                    $("#check_ok").delay(1500).fadeOut(300);
+                    //atualiza lista de repositórios ao usuário
+                    busca_repositorios_armazenados();
+                    //seta valor de variável
+                    escreve_arg_apaga_repositorio_armazenado(null);
+                  }
               },
               error: function (data, string, string2) {
                 console.log (data);
@@ -145,16 +170,13 @@ function apaga_repositorio_armazenado(id){
                 $('#loading').css('display', 'none');
                 $('#check_erro').css('display', 'block');
                 $("#check_erro").delay(1500).fadeOut(300);
-
-
-
-              }
+                }
             });
           }
     }
 }
 
-
+//busca reposítorios e exibe oara o usuário
 $(document).ready(function(){
   busca_repositorios_armazenados();
 });
