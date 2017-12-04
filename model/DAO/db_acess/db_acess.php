@@ -5,11 +5,11 @@
  * @author Eduardo Garbin - garbunus@gmail.com / 2017
  */
 
-header('Content-Type: text/html; charset=utf-8');
+header('Content-Type: text/html; charset=utf8mb4');
 
 class db_acess{
 
-    private $DSN = "mysql:host=localhost; dbname=top_rep; charset=utf8"; // charset=utf8
+    private $DSN = "mysql:host=localhost; dbname=top_rep; charset=utf8mb4"; // charset=utf8
     private $usuario = "root";
     private $senhaMagica = "laramysql";
 
