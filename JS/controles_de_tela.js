@@ -13,6 +13,11 @@ function mostra_tela_armazenados(){
   $('#tela_armazenados').css('display','block');
 }
 
+function boas_vindas(){
+  $('#welcome').css('display','block');
+  $("#welcome").delay(2000).fadeOut(300);
+}
+
 $(document).ready(function () {
   mostra_tela_busca();
 });
