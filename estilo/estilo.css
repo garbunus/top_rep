@@ -1,5 +1,5 @@
 body{
-  background-color: #DDD;
+  background-color: #fdfffc;
   width: 100%;
   height: 700px;
   font-family: 'Noto Sans', sans-serif;
@@ -10,7 +10,16 @@ body{
 /* ################  estilos gerais  #######################*/
 .bt_geral{
  margin: 10px;
+ background-color: #EEE;
+ width: 120px;
+ height: 30px;
+ border-radius: 5px;
+ transition: 0.3s;
+ border-style: solid;
+ border-color: #0C7489;
 }
+.bt_geral:hover{background-color: #0C7489; color:#fdfffc; transition: 0.3s;}
+.bt_geral:active{background-color: #3DA5D9; color:#fdfffc; border-color: #3DA5D9; transition: 0.2s;}
 
 .bloco_interno{
   margin-left: auto;
@@ -29,12 +38,13 @@ td{
 .td_link{
   text-align: center;
   font-weight: 400;
-  background-color: orange;
+  background-color: #E9724C;
   color: #EEE;
+  text-decoration: none;
 }
 
 .legenda{
-  color: orange;
+  color: #0C7489;
   font-weight: 800;
 
 }
@@ -51,14 +61,14 @@ td{
   border-collapse: collapse;
   border-bottom: 1px;
   border-bottom-style: solid;
-  border-bottom-color: #FFF;
+  border-bottom-color: #DDD;
 }
 .linha_lista:hover{ background-color: rgba(0,0,0,0.1)}
 .linha_lista:active{ background-color: rgba(0,0,0,0.2)}
 .linha_lista_checked{ background-color: rgba(0,0,0,0.2)}
 
 h3{
-  color: #999;
+  color: #65655e;
   font-family: 'Noto Sans', sans-serif;
 }
 
@@ -75,9 +85,8 @@ h3{
   overflow: hidden;
   margin-left: auto;
   margin-right: auto;
-  /*background-color: rgb(255,255,255);*/
-  background-color: rgba(255,255,255,0.75);
-  transition: 0,5s;
+  background-color: rgba(253, 255, 252,0.8);
+  transition: 0,7s;
 }
 
 .img_feedback{
@@ -92,14 +101,14 @@ h3{
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 10px;
-  background-color: #EEE;
+  background-color: #F4F1DE;
   width: 1000px;
   height: 600px;
 }
 
 #barra_sup{
-  background-color: #777;
-  color: #AAA;
+  background-color: #E9724C;
+  color: #65655e;
   height: 30px;
   width: 100%;
 }
@@ -109,11 +118,11 @@ ul{
     margin: 0;
     padding: 0;
     overflow: hidden;
-  }
+}
 
 .bt_telas{
       display: block;
-      color: #DDD;
+      color: #65655e;
       text-align: center;
       margin-right: 5px;
       padding-left: 20px;
@@ -131,7 +140,7 @@ ul{
       cursor: pointer;
 
 }
-.bt_telas:hover{ color: #FFDD09; transition: 0.2s; }
+.bt_telas:hover{ color: #fdfffc; transition: 0.2s; }
 .bt_telas:active{ color: #AAA; }
 
 /* ################  estilos tela busca  ##################### */
@@ -142,7 +151,7 @@ ul{
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 10px;
-  background-color: #DDD;
+  background-color: #fdfffc;
 }
 
 #cabecalho_repositorios_git{
@@ -151,7 +160,7 @@ ul{
   margin-left: auto;
   margin-right: auto;
   margin-top: 10px;
-  background-color: #888;
+  background-color: #65655e;
   color: #FFF;
   font-family: 'Raleway', sans-serif;
   font-weight: 400;
@@ -177,7 +186,7 @@ ul{
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 10px;
-  background-color: #DDD;
+  background-color: #fdfffc;
 }
 
 #cabecalho_repositorios_armazenados{
@@ -186,7 +195,7 @@ ul{
   margin-left: auto;
   margin-right: auto;
   margin-top: 60px;
-  background-color: #888;
+  background-color: #65655e;
   color: #FFF;
   font-family: 'Raleway', sans-serif;
   font-weight: 400;
