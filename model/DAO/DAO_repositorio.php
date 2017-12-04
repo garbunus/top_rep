@@ -46,7 +46,7 @@ class DAO_repositorio{
     $retorno = array();
 
     //SQL para gravar dados no banco
-    $sql_1 = $conexao->prepare('SELECT id, nome, descricao, linguagem FROM repositorios ORDER BY linguagem;');
+    $sql_1 = $conexao->prepare('SELECT id, nome, descricao, linguagem, html_url FROM repositorios ORDER BY linguagem;');
 
     //execução da transação
     try{
