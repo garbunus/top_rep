@@ -3,7 +3,7 @@
 <HTML>
   <HEAD>
     <meta charset="utf8">
-    <title>top_repo</title>
+    <title>TOP{GIT}</title>
 
     <!-- ADD JQUERY -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -22,7 +22,13 @@
     <!-- ADD STYLE-->
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans|Open+Sans|Raleway:100,200,300,400" rel="stylesheet">
     <link href="../estilo/estilo.css" rel="stylesheet" type="text/css"/>
-    <link rel="shortcut icon" href="/img/logo.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="img/logo_uni.png" type="image/x-icon" />
+
+    <script>
+      $(document).ready(function(){
+        boas_vindas();
+      });
+    </script>
 
   </HEAD>
   <BODY>
@@ -31,6 +37,7 @@
         <ul>
           <li class="bt_telas" onclick="mostra_tela_busca()">Buscar</li>
           <li class="bt_telas" onclick="mostra_tela_armazenados()">Dados Armazenados</li>
+          <li class="about"><img src="img/logo_long.png" style="height:20px; margin-top:3px;"/></li>
         </ul>
       </div>
       <?php
