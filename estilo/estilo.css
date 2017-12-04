@@ -3,7 +3,6 @@ body{
   width: 100%;
   height: 700px;
   font-family: 'Noto Sans', sans-serif;
-  font-weight: 100;
   font-stretch: expanded;
 }
 
@@ -46,6 +45,25 @@ td{
 .legenda{
   color: #0C7489;
   font-weight: 800;
+}
+
+.legenda_input{
+  color: #0C7489;
+  margin-right: 20px;
+  float: left;
+  margin-top: 12px;
+}
+
+.titulo{
+  color: #E9724C;
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+  text-align: center;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  font-size: 20px;
+
 
 }
 
@@ -63,9 +81,9 @@ td{
   border-bottom-style: solid;
   border-bottom-color: #DDD;
 }
-.linha_lista:hover{ background-color: rgba(0,0,0,0.1)}
-.linha_lista:active{ background-color: rgba(0,0,0,0.2)}
-.linha_lista_checked{ background-color: rgba(0,0,0,0.2)}
+.linha_lista:hover{ background-color: rgba(61, 165, 217, 0.1)}
+.linha_lista:active{ background-color: rgba(61, 165, 217, 0.2)}
+.linha_lista_checked{ background-color: rgba(61, 165, 217, 0.3)}
 
 h3{
   color: #65655e;
@@ -146,7 +164,7 @@ ul{
 /* ################  estilos tela busca  ##################### */
 #repositorios_git{
   width: 80%;
-  height: 400px;
+  height: 350px;
   overflow-y: scroll;
   margin-left: auto;
   margin-right: auto;
@@ -181,7 +199,7 @@ ul{
 /* ################  estilos tela dados armazenados  ##################### */
 #repositorios_armazenados{
   width: 80%;
-  height: 400px;
+  height: 350px;
   overflow-y: scroll;
   margin-left: auto;
   margin-right: auto;
@@ -194,7 +212,7 @@ ul{
   height: 30px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 60px;
+  margin-top: 30px;
   background-color: #65655e;
   color: #FFF;
   font-family: 'Raleway', sans-serif;
