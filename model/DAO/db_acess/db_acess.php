@@ -10,22 +10,12 @@ header('Content-Type: text/html; charset=utf8mb4');
 class db_acess{
 
   //extraindo variáveis para acesso no banco de dados
-<<<<<<< HEAD
 
 
   $hostname = "**************";
   $username = "**************";
   $password = "**************";
   $database = "**************";
-=======
-  $url = getenv('JAWSDB_URL');
-  $dbparts = parse_url($url);
-
-  $hostname = $dbparts['host'];
-  $username = $dbparts['user'];
-  $password = $dbparts['pass'];
-  $database = ltrim($dbparts['path'],'/');
->>>>>>> f80a630d818c3e3774f79b83c732c09a5ee4295e
 
 
 
