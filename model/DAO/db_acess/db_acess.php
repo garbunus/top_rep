@@ -9,9 +9,19 @@ header('Content-Type: text/html; charset=utf8mb4');
 
 class db_acess{
 
-    private $DSN = "mysql:host=localhost; dbname=top_rep; charset=utf8mb4"; // charset=utf8
-    private $usuario = "root";
-    private $senhaMagica = "laramysql";
+  //extraindo variáveis para acesso no banco de dados
+
+
+  $hostname = "**************";
+  $username = "**************";
+  $password = "**************";
+  $database = "**************";
+
+
+
+    private $DSN = "mysql:host=".$hostname."; dbname=".$databse."; charset=utf8mb4"; // charset=utf8
+    private $usuario = $username;
+    private $senhaMagica = $password;
 
 
     //método "mágico" de configuração das variáveis da classe
